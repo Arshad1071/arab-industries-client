@@ -15,10 +15,19 @@ const drawerWidth = 240;
 
 function ResponsiveDrawer() {
   const drawer = (
-    <div style={{ backgroundColor: "#808080", height: "900px" }}>
-      <img src={Briefcase} alt="Logo" />
-      <img src={StatBoard} alt="Logo" />
-      <Toolbar />
+    <div
+      style={{
+        backgroundColor: "#808080",
+        height: "900px",
+      }}
+    >
+      <Box sx={{ marginLeft: "65px" }}>
+        <img src={Briefcase} alt="Logo" />
+      </Box>
+      <Box sx={{ marginLeft: "60px" }}>
+        <img src={StatBoard} alt="Logo" />
+      </Box>
+
       <Divider />
       <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
