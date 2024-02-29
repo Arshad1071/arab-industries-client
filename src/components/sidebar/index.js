@@ -7,11 +7,10 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import Toolbar from "@mui/material/Toolbar";
 import Briefcase from "../../assets/img/Briefcase.svg";
 import StatBoard from "../../assets/img/StatBoard.png";
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
 function ResponsiveDrawer() {
   const drawer = (
@@ -21,16 +20,16 @@ function ResponsiveDrawer() {
         height: "900px",
       }}
     >
-      <Box sx={{ marginLeft: "65px" }}>
+      <Box sx={{ marginLeft: "50px" }}>
         <img src={Briefcase} alt="Logo" />
       </Box>
-      <Box sx={{ marginLeft: "60px" }}>
+      <Box sx={{ marginLeft: "45px" }}>
         <img src={StatBoard} alt="Logo" />
       </Box>
 
       <Divider />
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+        {["Dashboard", "Support", "Plugins", "Help"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemText primary={text} />
