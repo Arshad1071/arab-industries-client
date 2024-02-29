@@ -8,6 +8,8 @@ import BasicColor from "../../components/graph";
 import PieActiveArc from "../../components/PieChart";
 import BasicTable from "../../components/table";
 import ActionAreaCard from "../../components/card";
+import ResponsiveAppBar from "../../components/Appbar";
+import StatBoard from "../../assets/img/StatBoard.png";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -27,7 +29,7 @@ const Admin = () => {
           </Grid>
           <Grid item container spacing={6} padding={5} xs={10}>
             <Grid item xs={12}>
-              <Item>xs=12</Item>
+              <ResponsiveAppBar />
             </Grid>
             <Grid item xs={8}>
               <BasicColor />
